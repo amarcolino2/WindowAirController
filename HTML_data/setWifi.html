@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+a
+<head>
+<title>Mozilla CSS Getting Started - JavaScript demonstration</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body style="background-color: black;">
+<h1>Configuração de Rede</h1>
+
+<form id="my-form" onsubmit="return false" name="WIFI">
+    <label for="wifiSsid">Wifi:</label><br>
+    <input id="Wssid" type="text" name="wifi_ssid" placeholder="" required><br>
+    <label for="wifiPass">Senha:</label><br>
+    <input id="Wpass" type="password" name="wifi_pass" placeholder="" required><br>
+
+    <input class="submit-button" type="submit" value="Submit" onclick="wifi()" style="margin-bottom: 30px;">
+    <div id="lock-modal"></div>
+    <div id="loading-circle"></div>
+    <br>
+    <input type='radio' name='nav'  class="radio" value="setBroker" onclick="setBroker()" style="margin-right: 40px"/>
+    <input type='radio' name='nav' class="radio" value="setWifi" onclick="setWifi()" checked style="margin-right: 40px"/>
+    <input type='radio' name='nav' class="radio" value="powerTest" onclick="powerText()" style="margin-right: 5px"/>
+</form>
+<!--div id="square"></div-->
+
+<!--button type="button" onclick="doDemo(this);">Click Me</button-->
+
+</body>
+</html>

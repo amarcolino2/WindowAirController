@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+
+<head>
+<title>Mozilla CSS Getting Started - JavaScript demonstration</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body style="background-color: black;">
+<h1>Configuração IOT</h1>
+
+<form id="my-form" onsubmit="return false" name="HOME">
+    <label for="firstname">Usuario:</label><br>
+    <input id="user" type="text" name="user_login" placeholder="Admin" required><br>
+    <label for="lastname">Senha:</label><br>
+    <input id="pass" type="password" name="user_pass" placeholder="" required><br>  
+    <input class="submit-button" type="submit" value="Submit" onclick="autentication()" style="margin-bottom: 30px;">
+    <div id="lock-modal"></div>
+    <div id="loading-circle"></div>
+    <br>
+</form>
+
+<!--div id="square"></div-->
+
+<!--button type="button" onclick="doDemo(this);">Click Me</button-->
+
+</body>
+</html>

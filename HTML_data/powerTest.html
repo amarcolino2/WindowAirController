@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+
+<head>
+<title>Mozilla CSS Getting Started - JavaScript demonstration</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body style="background-color: black;">
+<h1>Teste on/off</h1>
+
+<form id="my-form" onsubmit="return false" name="POWER">
+    <label for="PowerOnOff">Power:</label><br>
+    <br>
+    <button  id="powerButton" class="button"
+        value="off"
+        style="background-color:#008ffb; 
+            height: 30px; width: 50px;" 
+            onclick="power()">
+            Off
+    </button>
+
+    <div id="lock-modal"></div>
+    <div id="loading-circle"></div>
+    <br>
+    <input type='radio' name='nav'  class="radio" value="setBroker" onclick="setBroker()" style="margin-right: 40px; margin-top: 40px"/>
+    <input type='radio' name='nav' class="radio" value="setWifi" onclick="setWifi()" style="margin-right: 40px"/>
+    <input type='radio' name='nav' class="radio" value="powerTest" onclick="powerTest()" checked style="margin-right: 5px"/>
+    <br>
+</form>
+
+<!--div id="square"></div-->
+
+<!--button type="button" onclick="doDemo(this);">Click Me</button-->
+
+</body>
+</html>

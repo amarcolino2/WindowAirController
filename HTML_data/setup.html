@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+a
+<head>
+<title>Mozilla CSS Getting Started - JavaScript demonstration</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body style="background-color: black;">
+<h1>Configuração do Mqqt</h1>
+
+<form id="my-form" onsubmit="return false" name="MQTT">
+    <label for="mqttBroker">Broker:</label><br>
+    <input id="brokerIp" type="text" name="broker_ip" placeholder="35.153.214.253" required><br>
+    <label for="mqttPort">Porta:</label><br>
+    <input id="brokerPort" type="number" name="broker_port" placeholder="1883" required><br>
+
+    <label for="mqttUser">Usuario:</label><br>
+    <input id="brokerUser" type="text" name="broker_user" placeholder="terceiros" required><br>
+    <label for="mqttPass">Senha:</label><br>
+    <input id="brokerPass" type="password" name="broker_pass" placeholder="" required><br>
+
+    <input class="submit-button" type="submit" value="Submit" onclick="mqtt()" style="margin-bottom: 30px;">
+    <div id="lock-modal"></div>
+    <div id="loading-circle"></div>
+    <br>
+    <input type='radio' name='nav'  class="radio" value="setBroker" onclick="setBroker()" checked style="margin-right: 40px"/>
+    <input type='radio' name='nav' class="radio" value="setWifi" onclick="setWifi()" style="margin-right: 40px"/>
+    <input type='radio' name='nav' class="radio" value="powerTest" onclick="powerTest()" style="margin-right: 5px"/>
+</form>
+<!--div id="square"></div-->
+
+<!--button type="button" onclick="doDemo(this);">Click Me</button-->
+
+</body>
+</html>

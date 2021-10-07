@@ -1,0 +1,19 @@
+/*** JavaScript demonstration ***/
+h1 {
+  text-align: center;
+  background-color: #851944;
+  color:#FFF;
+}
+p {
+  text-align: justify;
+}
+#square {
+    width: 20em;
+    height: 20em;
+    border: 2px inset gray;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    padding: .5em 2em;
+  }

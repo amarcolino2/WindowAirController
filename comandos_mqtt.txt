@@ -1,0 +1,36 @@
+
+
+controlador janela:
+
+comando : tópico
+
+sub - ligar ar 		:  sala0000/dev0000/switch on
+sub - desligar ar 	:  sala0000/dev0000/switch off
+pub - ler dados		:  sala0000/dev0000/data   
+
+data = {"tensao":"220.78",
+"corrente":"12.45",
+"pativa":"2540.45",
+"paparente":"2560.70",
+"fpot":"0.97",
+"tempNTC":"29",
+"tempDS":"28.50",
+"sobreC":"Sem Anomalias no Sistema"}
+
+//------------------------------
+
+controlador split:
+
+sub 1- Ligar o equipamento 		:	sala0000/dev0000/switch 	on
+sub 2- Desligar o equipamento 		:	sala0000/dev0000/switch 	off
+sub 3- Set Temperatura 			:	sala0000/dev0000/set_temp 	xx.xx
+sub 4- Set Fan 				:	sala0000/dev0000/fan_level  	x
+pub 5- Temp_1				:	sala0000/dev0000/temp_in  	xx.xx
+pub 6- Temp_2				:	sala0000/dev0000/temp_out 	xx.xx
+pub 7- Keep-Alive com ID 		:	sala0000/dev0000/id 		xxxxxxxx
+
+
+
+
+
+
